@@ -70,7 +70,7 @@ public class Employee {
   public BigDecimal raiseSalary() {
     final int yearsOfWorkDays = 2021 - hireYear;
     final BigDecimal salaryRaiseRate = salaryRaiseRate(yearsOfWorkDays);
-    return salaryWithBonusAndTax().multiply(salaryRaiseRate);
+    return salary.multiply(salaryRaiseRate);
   }
 
   private BigDecimal salaryRaiseRate(final int yearsOfWorkDays) {
@@ -95,17 +95,15 @@ public class Employee {
   @Override
   public String toString() {
     final String output =
-        "Employee {\n" +
-            "\tname = %s, \n" +
-            "\tsalary = %s, \n" +
-            "\tworkHours = %s, \n" +
-            "\thireYear = %s, \n" +
-            "\ttax = %s, \n" +
-            "\tbonus = %s \n" +
-            "\traiseSalaryRate = %s \n " +
-            "\tsalaryWithBonusAndTax: %s \n " +
-            "\ttotalSalary: %s\n" +
-            "}";
+        "Adı : %s\n" +
+            "Maaşı : %s\n" +
+            "Çalışma saati : %s\n" +
+            "Başlangıç yılı : %s\n" +
+            "Vergi : %s\n" +
+            "Bonus : %s\n" +
+            "Maaş artışı : %s\n" +
+            "Vergi ve bonuslar ile irlikte maaş : %s\n" +
+            "Toplam maaş: %s\n";
 
     return String.format(output,
         name,
