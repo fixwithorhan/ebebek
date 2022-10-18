@@ -14,6 +14,7 @@ public class Main {
     final Employee ilhan = new Employee("İlhan Devrim", new BigDecimal("1300"), 35, 2017);
     final Employee rizvan = new Employee("Rızvan Bünyamin", new BigDecimal("1500"), 38, 2015);
     final Employee yasin = new Employee("Yasin Beyazlı", new BigDecimal("2000"), 43, 2013);
-    return Arrays.asList(ziynet, ilhan, rizvan, yasin);
+    final Employee kemal = new Employee("Kemal Aydın", new BigDecimal("2000"), 45, 1985);
+    return Arrays.asList(ziynet, ilhan, rizvan, yasin, kemal);
   }
 }
